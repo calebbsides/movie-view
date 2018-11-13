@@ -1,5 +1,6 @@
 const constants = {
-    SETMOVIE: "SETMOVIE"
+    SETSEARCHINPUT: "SETSEARCHINPUT",
+    SETSEARCHRESULTS: "SETSEARCHRESULTS"
 }
 
 export { constants };

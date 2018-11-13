@@ -1,16 +1,22 @@
 import { constants } from 'constants/actions';
 
 const initialState = {
-    movie: ""
+    searchInput: "",
+    searchResults: null
 }
 
 const reducer = ( state = initialState, action ) => {
     switch( action.type ) {
-        case constants.SETMOVIE: 
+        case constants.SETSEARCHRESULTS: 
             return {
                 ...state,
-                movie: action.data
+                searchResults: action.data
             };
+        case constants.SETSEARCHINPUT:
+            return {
+                ...state,
+                searchInput: action.data
+            }
         default:
             return state;
     }
